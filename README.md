@@ -415,6 +415,14 @@ Run tests with coverage:
 npm run test:coverage
 ```
 
+Run linters:
+
+```bash
+# ESLint (modern, enforces 2-space indentation)
+# Preferred: use `npm run lint` which runs eslint
+npm run lint
+```
+
 The library maintains high test coverage (100% lines, 100% statements, 100% functions, 95% branches) including comprehensive tests for:
 
 - Method and getter memoization
@@ -425,6 +433,19 @@ The library maintains high test coverage (100% lines, 100% statements, 100% func
 - Tag-based invalidation
 - Circular reference handling
 - Undefined value caching
+
+## Development
+
+This project uses ESLint for linting (preferred) and Jest/ts-jest for testing.
+
+- ESLint: `eslint@9.39.2`
+- TypeScript ESLint parser/plugin: `@typescript-eslint/parser@8.49.0`, `@typescript-eslint/eslint-plugin@8.49.0`
+
+Run the linter with:
+
+```bash
+npm run lint
+```
 
 ## Requirements
 
